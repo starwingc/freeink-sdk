@@ -292,6 +292,13 @@ public:
                   : SelectionMarker::Triangle;
         }
         break;
+      case SelectionStyle::Frame:
+        styles.selected = styles.normal;
+        styles.selected.border = Paint::solid(Color::Black);
+        styles.selected.borderWidth = 2;
+        styles.selected.radius = 8;
+        styles.active = styles.selected;
+        break;
       case SelectionStyle::InvertFill:
       default:
         break;

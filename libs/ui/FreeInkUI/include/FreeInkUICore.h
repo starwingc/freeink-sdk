@@ -627,6 +627,7 @@ enum class SelectionStyle : uint8_t {
   LightPill,  // LightGray dither fill, text stays black
   Underline,  // rows keep their normal style; underline marker
   Triangle,   // rows keep their normal style; triangle marker
+  Frame,      // rows keep their normal fill; selected row gets a rounded outline
 };
 
 enum class SeparatorStyle : uint8_t {
